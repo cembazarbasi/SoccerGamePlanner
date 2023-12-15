@@ -12,8 +12,8 @@ const BASE_URL = 'http://localhhost:8080';
 export class AuthService {
   
   private admin = {
-    adminEmail: 'cembazar@gmail.com',
-    adminPassword: 42171903
+    adminEmail: '********',
+    adminPassword: *******
   };
 
   isLoggedIn(): boolean {
@@ -23,7 +23,7 @@ export class AuthService {
   }  
   isAllowedForDashboard(userEmail: string): boolean {
     // Check if the userEmail is allowed to access the dashboard
-    return userEmail === 'cembazar@gmail.com'; // Modify this condition as needed
+    return userEmail === '*******'; // Modify this condition as needed
   }
 
   constructor(private route: ActivatedRoute, private http: HttpClient) {

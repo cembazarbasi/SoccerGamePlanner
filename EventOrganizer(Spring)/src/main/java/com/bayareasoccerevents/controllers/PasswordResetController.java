@@ -23,7 +23,8 @@ import com.bayareasoccerevents.services.PasswordResetTokenService;
 
 @RestController
 @RequestMapping("/reset-password")
-@CrossOrigin(origins= "http://bayareasoccerevents.com/*" )
+/*@CrossOrigin(origins= "http://bayareasoccerevents.com/*" )*/
+@CrossOrigin(origins= "http://localhost:4200/*" )
 public class PasswordResetController {
 
     @Autowired
@@ -43,8 +44,8 @@ public class PasswordResetController {
         if (user != null) {
             String token = generateUniqueToken(); // Implement this method
             PasswordResetToken resetToken = tokenService.createToken(user, token);
-            String resetLink = "http://bayareasoccerevents.com/reset-password/reset?token=" + token;
-            //String resetLink = "http://localhost:4200/reset-password/reset?token=" + token;
+            //String resetLink = "http://bayareasoccerevents.com/reset-password/reset?token=" + token;
+            String resetLink = "http://localhost:4200/reset-password/reset?token=" + token;
             emailService.sendPasswordResetEmail(user, resetLink);
             
            

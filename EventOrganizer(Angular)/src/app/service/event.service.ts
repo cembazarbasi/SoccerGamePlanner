@@ -3,8 +3,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { BehaviorSubject, Observable, map } from 'rxjs';
 
-const API_URL = 'http://ec2-54-193-103-154.us-west-1.compute.amazonaws.com:8080'; 
-//const API_URL = 'http://localhhost:8080';
+//const API_URL = 'http://ec2-54-193-103-154.us-west-1.compute.amazonaws.com:8080'; 
+const API_URL = 'http://localhhost:8080';
 @Injectable({
   providedIn: 'root',
 })

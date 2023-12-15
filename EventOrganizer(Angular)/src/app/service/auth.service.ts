@@ -4,8 +4,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Observable,  tap } from 'rxjs';
 
 
-const BASE_URL = 'http://ec2-54-193-103-154.us-west-1.compute.amazonaws.com:8080';
-//const BASE_URL = 'http://localhhost:8080';
+//const BASE_URL = 'http://ec2-54-193-103-154.us-west-1.compute.amazonaws.com:8080';
+const BASE_URL = 'http://localhhost:8080';
 @Injectable({
   providedIn: 'root'
 })

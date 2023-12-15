@@ -1,0 +1,8 @@
+{
+    "/api": {
+      "target": "http://bayareasoccerevents.com:8080",
+      "secure": false
+      
+    }
+  }
+  
